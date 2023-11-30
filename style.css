@@ -1,0 +1,193 @@
+/*------ fonts ------ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/*------ resets ------ */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/*------ section ------ */
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #121321 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+}
+section::before{
+    content: "";
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    background: linear-gradient(90deg,#9c27b0,#f3f5f5);
+    border-radius: 50%;
+    transform: translate(-150px ,-100px);
+}
+section::after{
+    content: "";
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    background: linear-gradient(90deg,#9c27b0,#f3f5f5);
+    border-radius: 50%;
+    transform: translate(150px ,100px);
+}
+/*------ end of section ------ */
+
+
+/*------ container ------ */
+
+
+/* front face  */
+.container{
+    position: relative;
+    z-index: 100;
+    width: 375px;
+    height: 225px;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+}
+.container:hover{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+.container .card{
+    width: 100%;
+    height: 100%;
+    background-color:rgba(255 , 255, 255, 0.1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.25);
+    border: 1px rgba(255 , 255, 255, 0.1);
+    backdrop-filter: blur(25px);
+    border-radius: 25px;
+    padding: 25px;
+    color: white;
+    position: absolute;
+    backface-visibility: hidden;
+}
+.card .cardf{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.card .cardf .mastercard{
+    display: flex;
+    flex-direction: row;
+}
+.card .cardf .mastercard img{
+    width: 47px;
+    height: 30px;
+    margin-right: 15px;
+}
+.card .cardf .mastercard p{
+    font-weight: 400;
+}
+.card .cardf .chip img{
+    width: 52px; 
+}
+.card-dd{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.card-dd .card-dd2{
+    position: relative;
+    bottom: 10px;
+    font-weight: 300;
+}
+.card-dd .card-dd2 h6{
+    font-weight: 400;
+    font-size: 9px;
+}
+.card-dd .card-dd2 h4{
+    font-weight: 400;
+    font-size: 14px;
+}
+.card-d{
+    margin-top: 35px;
+}
+.card-d h6{
+    font-weight: 400;
+    font-size: 12px;
+}
+.card-d h4{
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+}
+.card-dd .card-dd1 h4{
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+/* end of front face  */
+
+
+
+
+/* back face  */
+.back-face{
+    transform: rotateY(180deg);
+}
+ .back-face h6 {
+    font-size: 8px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+.back-face .black-strip {
+    position: absolute;
+    width: 100%;
+    height: 18%;
+    right: 0px;
+    background-color: black;
+   
+}
+.back-face .bnw {
+    display: flex;
+    flex-direction: row;
+}
+.back-face .bnw .bnw1 {
+    width: 70%;
+    height: 17% ;
+    /* background-color: #f3f5f5; */
+    background: repeating-linear-gradient(#fff, #fff 3px , #efefef 0px , #efefef 9px);
+    border-radius: 5px;
+    position: absolute;
+    top: 110px;
+    
+}
+.back-face .bnw .bnw2{
+    width: 10%;
+    height: 11% ;
+    background-color: #f3f5f5;
+    border-radius: 4px;
+    position: absolute;
+    top: 115px;
+    left: 281px;
+    color: black ;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: end;
+    padding-right: 5px;
+    padding-top: 5px;
+}
+.back-face h5 {
+    position: absolute;
+    top: 165px;
+    font-size: 8px;
+    font-weight: 400;
+    display: flex;
+    margin-inline: 22px;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    right: 0px;
+}
+/* end of backface  */

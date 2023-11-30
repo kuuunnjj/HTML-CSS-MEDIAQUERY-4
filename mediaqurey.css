@@ -1,0 +1,379 @@
+/* media queries  */
+
+@media only screen and (min-width: 320px) and (max-width: 800px)  {
+
+/*------ section ------ */
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #121321 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+}
+section::before{
+    content: "";
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    background: linear-gradient(90deg,#9c27b0,#f3f5f5);
+    border-radius: 50%;
+    transform: translate(-110px ,-60px);
+}
+section::after{
+    content: "";
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    background: linear-gradient(90deg,#9c27b0,#f3f5f5);
+    border-radius: 50%;
+    transform: translate(110px ,60px);
+}
+/*------ end of section ------ */
+
+/*------ container ------ */
+
+
+/* front face  */
+.container{
+    position: relative;
+    z-index: 100;
+    width: 240px;
+    height: 140px;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+}
+.container:hover{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+.container .card{
+    width: 100%;
+    height: 100%;
+    background-color:rgba(255 , 255, 255, 0.1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.25);
+    border: 1px rgba(255 , 255, 255, 0.1);
+    backdrop-filter: blur(25px);
+    border-radius: 12px;
+    padding: 13px;
+    color: white;
+    position: absolute;
+    backface-visibility: hidden;
+}
+.card .cardf{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.card .cardf .mastercard{
+    display: flex;
+    flex-direction: row;
+}
+.card .cardf .mastercard img{
+    width: 28px;
+    height: 17px;
+    margin-right: 10px;
+}
+.card .cardf .mastercard p{
+    font-weight: 300;
+    font-size: 10px;
+}
+.card .cardf .chip img{
+    width: 32px; 
+}
+.card-dd{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 13px;
+}
+.card-dd .card-dd2{
+    position: relative;
+    bottom: 7px;
+    font-weight: 300;
+}
+.card-dd .card-dd2 h6{
+    font-weight: 300;
+    font-size: 5px;
+}
+.card-dd .card-dd2 h4{
+    font-weight: 300;
+    font-size: 8px;
+}
+.card-d{
+    margin-top: 25px;
+}
+.card-d h6{
+    font-weight: 300;
+    font-size: 8px;
+}
+.card-d h4{
+    font-weight: 300;
+    font-size: 11px;
+
+    
+}
+.card-dd .card-dd1 h4{
+    font-weight: 300;
+    font-size: 10px;
+    
+}
+/* end of front face  */
+
+/* back face  */
+.back-face{
+    transform: rotateY(180deg);
+}
+ .back-face h6 {
+    font-size: 5px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    text-align: center;
+}
+.back-face .black-strip {
+    position: absolute;
+    width: 100%;
+    height: 18%;
+    right: 0px;
+    background-color: black;
+   
+}
+.back-face .bnw {
+    display: flex;
+    flex-direction: row;
+    margin-left: 8px;
+    margin-bottom: 4px;
+}
+.back-face .bnw .bnw1 {
+    width: 70.3%;
+    height: 17% ;
+    /* background-color: #f3f5f5; */
+    background: repeating-linear-gradient(#fff, #fff 3px , #efefef 0px , #efefef 9px);
+    border-radius: 5px;
+    position: absolute;
+    top: 70px;
+    
+}
+.back-face .bnw .bnw2{
+    width: 10.5%;
+    height: 11% ;
+    background-color: #f3f5f5;
+    border-radius: 4px;
+    position: absolute;
+    top: 75px;
+    left: 180px;
+    color: black ;
+    font-size: 8px;
+    font-weight: 600;
+    text-align: end;
+    padding-right: 3px;
+    padding-top: 3px;
+}
+.back-face h5 {
+    position: absolute;
+    top: 105px;
+    font-size: 5px;
+    font-weight: 300;
+    display: flex;
+    margin-inline: 22px;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    right: 0px;
+}
+/* end of backface  */
+
+
+
+
+
+
+}
+@media only screen and (orientation : landscape) and (min-width: 340px) and (max-width: 600px)  {
+
+/*------ section ------ */
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #121321 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+}
+section::before{
+    content: "";
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    background: linear-gradient(90deg,#9c27b0,#f3f5f5);
+    border-radius: 50%;
+    transform: translate(-110px ,-60px);
+}
+section::after{
+    content: "";
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    background: linear-gradient(90deg,#9c27b0,#f3f5f5);
+    border-radius: 50%;
+    transform: translate(110px ,60px);
+}
+/*------ end of section ------ */
+
+/*------ container ------ */
+
+
+/* front face  */
+.container{
+    position: relative;
+    z-index: 100;
+    width: 240px;
+    height: 140px;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+}
+.container:hover{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+.container .card{
+    width: 100%;
+    height: 100%;
+    background-color:rgba(255 , 255, 255, 0.1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.25);
+    border: 1px rgba(255 , 255, 255, 0.1);
+    backdrop-filter: blur(25px);
+    border-radius: 12px;
+    padding: 13px;
+    color: white;
+    position: absolute;
+    backface-visibility: hidden;
+}
+.card .cardf{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.card .cardf .mastercard{
+    display: flex;
+    flex-direction: row;
+}
+.card .cardf .mastercard img{
+    width: 28px;
+    height: 17px;
+    margin-right: 10px;
+}
+.card .cardf .mastercard p{
+    font-weight: 300;
+    font-size: 10px;
+}
+.card .cardf .chip img{
+    width: 32px; 
+}
+.card-dd{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 13px;
+}
+.card-dd .card-dd2{
+    position: relative;
+    bottom: 7px;
+    font-weight: 300;
+}
+.card-dd .card-dd2 h6{
+    font-weight: 300;
+    font-size: 5px;
+}
+.card-dd .card-dd2 h4{
+    font-weight: 300;
+    font-size: 8px;
+}
+.card-d{
+    margin-top: 25px;
+}
+.card-d h6{
+    font-weight: 300;
+    font-size: 8px;
+}
+.card-d h4{
+    font-weight: 300;
+    font-size: 11px;
+
+    
+}
+.card-dd .card-dd1 h4{
+    font-weight: 300;
+    font-size: 10px;
+    
+}
+/* end of front face  */
+
+/* back face  */
+.back-face{
+    transform: rotateY(180deg);
+}
+ .back-face h6 {
+    font-size: 5px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    text-align: center;
+}
+.back-face .black-strip {
+    position: absolute;
+    width: 100%;
+    height: 18%;
+    right: 0px;
+    background-color: black;
+   
+}
+.back-face .bnw {
+    display: flex;
+    flex-direction: row;
+    margin-left: 8px;
+    margin-bottom: 4px;
+}
+.back-face .bnw .bnw1 {
+    width: 70.3%;
+    height: 17% ;
+    /* background-color: #f3f5f5; */
+    background: repeating-linear-gradient(#fff, #fff 3px , #efefef 0px , #efefef 9px);
+    border-radius: 5px;
+    position: absolute;
+    top: 70px;
+    
+}
+.back-face .bnw .bnw2{
+    width: 10.5%;
+    height: 11% ;
+    background-color: #f3f5f5;
+    border-radius: 4px;
+    position: absolute;
+    top: 75px;
+    left: 180px;
+    color: black ;
+    font-size: 8px;
+    font-weight: 600;
+    text-align: end;
+    padding-right: 3px;
+    padding-top: 3px;
+}
+.back-face h5 {
+    position: absolute;
+    top: 105px;
+    font-size: 5px;
+    font-weight: 300;
+    display: flex;
+    margin-inline: 22px;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    right: 0px;
+}
+/* end of backface  */
+
+}
